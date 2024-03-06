@@ -1,0 +1,179 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <title>Registro</title>
+    <link rel="stylesheet" href="./estilos/body.css">
+    <link rel="stylesheet" href="./estilos/menu.css">
+    <link rel="stylesheet" href="./estilos/footer.css">
+    <link rel="stylesheet" href="./estilos/scroll.css">
+    <link href="./estilos/login.css" rel="stylesheet" type="text/css" media="all">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Animalatics</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+    <!--header-->
+    <header class="iconbitart">
+        <img class="img_logo" src="./icones/flat,550x550,075,f.u2.jpg" alt="icono bit_art">
+    </header>
+
+    <header class="main_header">
+        <input type="checkbox" id="boton_menu">
+        <label class="icono_menu" for="boton_menu">
+            <img src="./icones/iconomenu.png" alt="icono_menu" width="35px" height="35px">
+        </label>
+
+        <nav class="menu">
+            <ul>
+                <li> <a href="./index.html">Inicio</a> </li>
+                <li> <a href="../deportiva.html">Ropa deportiva</a> </li>
+                <li> <a href="../registro.html">Contactanos</a> </li>
+                <li><a href="#piepagina">Información</a> </li>
+            </ul>
+
+            <div class="dropdown">
+                <button class="dropbtn">More options</button>
+                <div class="dropdown_content">
+                    <a href="#section1">Ropa deportiva</a>
+                    <a href="#section2">Zapatos </a>
+                    <a href="#section3">Accesorios </a>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <nav class="navbar navbar-default barra">
+ 
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+      </nav>
+      <div class="container-fluid top">
+        <div class="row">
+          <form id="contacto" class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6" method="get">
+            <h2>Contactanos</h2>
+            <div class="form-group">
+              <label>Correo Electronico:</label>
+              <input name="correo" type="email" class="form-control" error="El campo Correo Electronico no es valido" id="emailCont" placeholder="usuario@email.com" required>
+            </div>
+            <div class="form-group">
+              <label>Nombre:</label>
+              <input name="nombre" type="text" class="form-control" error="El campo Nombre no es valido" id="nombCont" placeholder="Michelle Torres" required>
+            </div>
+            <div class="form-group">
+              <label>Celular:</label>
+              <input name="cel" type="text" class="form-control" error="El campo Celular no es valido" id="celCont" placeholder="0414-1234567" required>
+            </div>
+            <div class="form-group">
+              <label>Asunto:</label>
+              <input name="asunto" type="text" class="form-control" id="asunCont" placeholder="Asunto">
+            </div>
+            <div class="form-group">
+              <label>Comentario:</label>
+              <textarea name="coment" style="resize: none" class="form-control" id="coment" rows="3" required></textarea>
+            </div>
+            <button type="submit" id="botonCont" class="btn btn-primary">Enviar</button>
+          </form>
+        </div>
+      </div>
+    
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="js/bootstrap.min.js"></script>
+      <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+    
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Iniciar Sesión</h4>
+            </div>
+            <div class="modal-body">
+              <div class="input-group">
+                <span class="input-group-addon" id="sizing-addon2"><i class="fa fa-user" aria-hidden="true"></i></span>
+                <input id="user" type="text" class="form-control" placeholder="Usuario" aria-describedby="sizing-addon2">
+              </div><br>
+              <div class="input-group">
+                <span class="input-group-addon" id="sizing-addon2"><i class="fa fa-asterisk" aria-hidden="true"></i></span>
+                <input id="pass" type="password" class="form-control" placeholder="Contraseña" aria-describedby="sizing-addon2">
+              </div><br>
+            </div>
+            <div class="modal-footer">
+              <button id="log" type="button" class="btn btn-success">Ingresar</button>
+              <button type="button" class="btn btn-warning" data-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+    
+        </div>
+      </div>
+      <script type="text/javascript" src="js/contacto.js"></script>
+      <script type="text/javascript" src="js/script.js"></script>
+
+
+
+
+
+    <!-- pie de pagina -->
+    <footer id="piepagina">
+        <div class="map col">
+            <div class="mapa">
+                <h3>Ubicanos en</h3>
+                <br>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15950.68444349643!2d-76.27074954999999!3d1.87982645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e25709e99efb585%3A0x982d17973310954!2sSan%20Agust%C3%ADn%2C%20Huila!5e0!3m2!1ses-419!2sco!4v1709607794718!5m2!1ses-419!2sco"
+                    width="250" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe>
+                <h4> Colombia</h4>
+                <h4><img src="./icones/whatsapp.png" alt="">+57 3205194786</h4>
+            </div>
+        </div>
+
+        <div class="info col">
+            <h3>-About-</h3>
+            <br>
+            <p>
+                ENCUENTRA TODO LO QUIERES DE MODA CON NOSOTROS, ¡TE ESPERAMOS!
+            </p>
+        </div>
+        <div class="social col">
+            <h3>-Redes-</h3>
+            <br>
+            <div class="redes">
+                <img src="./icones/instagram.png" alt="">
+                <img src="./icones/twitter.png" alt="">
+                <img src="./icones/facebook.png" alt="">
+            </div>
+            <div class="logokirari">
+                <img src="./icones/flat,550x550,075,f.u2.jpg" alt="">
+            </div>
+        </div>
+    </footer>
+    <div class="textofooter">
+        <p>
+            © COPYRIGHT 2024 Michael Stuar Cano Hernandez
+            <br>
+            Todos los derechos reservados Bogotá - Colombia
+        </p>
+    </div>
+    <!-- scripts -->
+    <script src="./js/login.js"></script>
+
+
+</body>
+
+</html>
